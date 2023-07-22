@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "YekanReg";
+  font-style: normal;
+  src: url("../public/fonts/YekanBakh-Regular.woff2");
+}
+@font-face {
+  font-family: "YekanBd";
+  font-style: normal;
+  src: url("../public/fonts/YekanBakh-Black.woff2");
+}
+@font-face {
+  font-family: "YekanTn";
+  font-style: normal;
+  src: url("../public/fonts/YekanBakh-Thin.woff2");
+}
+
+:root {
+  direction: rtl;
+}
+
+body {
+  background-color: #fafafa;
+}
