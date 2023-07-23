@@ -9,13 +9,18 @@ import {
   FaPhone,
 } from "react-icons/fa";
 
-const Contact = ({ color }) => {
+const Contact = ({ color, call }) => {
   return (
-    <div className="flex flex-row">
-      <IconButtion link={""}>
-        <FaPhone color={color} fontSize={24} />
-        989168398153+
-      </IconButtion>
+    <div className="grid columns-4 md:flex flex-row justify-center items-center">
+      <div className="col-span-4">
+        {call && (
+          <IconButtion link={""}>
+            <FaPhone color={color} fontSize={24} />
+            989168398153+
+          </IconButtion>
+        )}
+      </div>
+
       <IconButtion
         link={"https://www.linkedin.com/in/hosein-sadon-asl-034539182/"}
       >

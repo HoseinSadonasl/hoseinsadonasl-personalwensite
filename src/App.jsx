@@ -88,7 +88,7 @@ function App() {
             </div>
             <hr className="h-0.5 bg-slate-300 w-full" />
           </div>
-          <section className="self-center  grid gap-6 w-full sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <section className="self-center sm:p-3 grid gap-6 w-full sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {handleProjects()}
           </section>
           <div className="flex flex-row justify-between items-center">
@@ -109,7 +109,7 @@ function App() {
                 src={codepic}
                 alt="hoseinir"
               />
-              <p className="text-white opacity-80 w-3/5 text-center subpixel-antialiased m-4 font-YekanBd absolute sm:text-lg lg:text-5xl leading-relaxed ">
+              <p className="text-white opacity-80 w-4/5 sm:w-4/5 md:w-4/6 lg:w-3/5 text-center subpixel-antialiased m-4 font-YekanBd absolute sm:text-2xl md:text-4xl lg:text-5xl leading-relaxed ">
                 با توجه به تخصص های من در این حوزه‌ها، می‌توانم به شما در تحقق
                 ایده‌های خود کمک کنم و بهترین راهکارها را برای شما ارائه دهم
               </p>
@@ -134,13 +134,17 @@ function App() {
         ref={pageButton}
         className="bg-primary py-24 flex flex-col justify-center items-center"
       >
-        <section className="w-4/5 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          <Card outline={true} position={` absolute `} bottom={`bottom-32 `}>
-            <div className="p-6 flex lg:flex-row md:flex-row sm:flex-col justify-center items-center ">
-              <h3 className="text-black m-4 font-YekanReg sm:text-lg lg:text-2xl">
+        <section className="w-full flex flex-col justify-center items-center">
+          <Card
+            outline={true}
+            position={` absolute `}
+            bottom={`bottom-12 sm:bottom-16 md:buttom-32 md:bottom-32 lg:bottom-32 `}
+          >
+            <div className="w-full flex flex-col lg:flex-row md:flex-row justify-center items-center p-6">
+              <h3 className="text-black m-4 text-center md:text-right lg:text-center font-YekanReg text-lg sm:text-lg lg:text-2xl">
                 جهت همکاری و سفارش پروزه با من در تماس باشید:
               </h3>
-              <Contact color={"#921DDF"} />
+              <Contact color={"#921DDF"} call={true} />
             </div>
           </Card>
         </section>
